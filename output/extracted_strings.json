@@ -1,0 +1,21 @@
+{
+    "What is the Invoice number?": "61356291",
+    "What is Invoice Date of Issue?": "09/06/2012",
+    "What is the name of Seller?": "Chapman, Kim and Green",
+    "What is the seller Tax Id number?": "949-84-9105",
+    "What is the address of Seller?": "64731 James Branch, Smithmouth, NC 26872",
+    "What is the name of Client?": "Rodriguez-Stevens",
+    "What is the Client Tax Id number?": "939-98-8477",
+    "What is address of Client?": "2280 Angela Plain, Hortonshire, MS 93248",
+    "What is the IBAN?": "GB50ACIE59715038217063",
+    "Description of first item?": "'Wine Glasses Goblets Pair Clear 5,00 Glass'",
+    "What is quantity of first item?": "5,00",
+    "What is UM of first item?": "pair",
+    "What is Net price of first item?": "12.00",
+    "What is VAT percentage of first item?": "10%",
+    "What is Gross worth of first item?": "$123.55",
+    "What is VAT percentage in Summary?": "10%",
+    "What is Net worth amount in Summary?": "192.81 dollars",
+    "What is Vat Amount in Summary?": "$19.28, 10% of the net worth of the items",
+    "What is Gross Worth amount?": "$212.09"
+}
