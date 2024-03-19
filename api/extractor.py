@@ -15,8 +15,6 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 # Hugging Face API token
 HF_TOKEN = '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'
 
-#file_path = 'bill.jpg'
-
 # function will extract text from the file 
 def text_extractor(file):
     filename = file.name  # Get the name of the uploaded file
@@ -140,7 +138,7 @@ def create_rag_pipeline(retriever, prompt_node):
     rag_pipeline.add_node(component=prompt_node, name="prompt_node", inputs=["retriever"])
     return rag_pipeline
 
-# 
+# function for list of question
 def create_question_list():
     """
     Create a list of questions to be asked.
@@ -189,8 +187,6 @@ def extract_answers(question_list, rag_pipeline):
         response[question] = answer["results"][0].strip()
     return response
 
-
-
 # function to extract substrings form response
 def extract_substrings(response):
     """
@@ -212,13 +208,10 @@ def extract_substrings(response):
             extracted_strings[question] = extracted_string
     return extracted_strings
 
-
 # Convert the extracted strings into JSON
 def string_to_json(string):
     extracted_strings_json = json.dumps(string)
     return extracted_strings_json
-
-
 
 # function to create a json file.
 def save_extracted_strings_to_json(extracted_strings, output_folder):
@@ -239,6 +232,4 @@ def save_extracted_strings_to_json(extracted_strings, output_folder):
     # Write the extracted strings to the JSON file
     with open(output_file_path, "w") as f:
         json.dump(extracted_strings, f, indent=4)
-
-
 
