@@ -38,6 +38,7 @@ def extract_information(request):
                     max_length=500,
                     model_max_length=5000
                 )
+                
                 rag_pipeline = extractor.create_rag_pipeline(retriever, prompt_node)
                 
                 question_list = extractor.create_question_list()
@@ -56,7 +57,6 @@ def extract_information(request):
                 
                 # Process the image with bounding boxes
                 processed_image = bb_image.process_image_with_word_bounding_boxes(file_path_img)
-                print("Processed Image: ",processed_image)
                 
                 # Check if the processed image is valid before encoding
                 # Read the image file
@@ -77,3 +77,4 @@ def extract_information(request):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     else:
         return Response({"error": "No file provided."}, status=status.HTTP_400_BAD_REQUEST)
+

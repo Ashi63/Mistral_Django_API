@@ -41,5 +41,5 @@ def process_image_with_word_bounding_boxes(image_path, processed_folder='process
     print(f"Processed image with word-level bounding boxes saved at {processed_image_path}")
 
 # Example usage:
-image_path = r"C:\Users\Alkashi\Desktop\Botmatic\Data_Sample\Data\Invoices\invoice.png"
-process_image_with_word_bounding_boxes(image_path)
+#image_path = r"C:\Users\Alkashi\Desktop\Botmatic\Data_Sample\Data\Invoices\invoice.png"
+#process_image_with_word_bounding_boxes(image_path)
